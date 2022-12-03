@@ -7,17 +7,15 @@ const rows = input.split("\n").map((row) => row.trim());
 
 // task 1
 const intersectionsInBags = rows
-  .map((row) => {
+  .flatMap((row) => {
     const bag1 = row.slice(0, row.length / 2);
     const bag2 = row.slice(row.length / 2);
 
     const bag1Set = new Set(bag1.split(""));
     const bag2Set = new Set(bag2.split(""));
 
-    const setIntersections = [...bag1Set].filter((x) => bag2Set.has(x));
-    return setIntersections;
+    return [...bag1Set].filter((x) => bag2Set.has(x));
   })
-  .flat();
 
 const A = "A".charCodeAt(0);
 const a = "a".charCodeAt(0);

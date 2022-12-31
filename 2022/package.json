@@ -6,6 +6,8 @@
     "1": "ts-node 1/index.ts",
     "2": "ts-node 2/index.ts",
     "3": "ts-node 3/index.ts",
+    "4": "ts-node 4/index.ts",
+    "5": "ts-node 5/index.ts",
     "format": "prettier --write .",
     "f": "prettier --write .",
     "test": "echo \"Error: no test specified\" && exit 1"
